@@ -2,4 +2,13 @@
     <string name="app_name">Diplomka</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edHintNumber"><font size ="16">Номер
+    </font></string>
+    <string name="signIn">Войти</string>
+    <string name="edPassword">Пароль</string>
+    <string name="tv_ewe_ne_zareg">Еще не зарегистрированы?</string>
+    <string name="registration">Регистрация</string>
+    <string name="forget_password">Забыли пароль?</string>
+    <string name="vosstanovit">Восстановить</string>
+    <string name="or">или</string>
 </resources>
