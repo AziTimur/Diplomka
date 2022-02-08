@@ -14,7 +14,8 @@
         android:background="@drawable/icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/error" />
 
     <TextView
         android:id="@+id/register_tv"
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
         android:layout_marginEnd="20dp"
-        android:text="Регистрация"
+        android:text="@string/registration"
         android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -47,12 +48,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="20dp"
-        android:drawableLeft="@drawable/ic_user"
-        android:hint="    Имя"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="22dp"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/phoneNumber_et"
@@ -60,12 +63,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:drawableLeft="@drawable/ic_phone"
-        android:hint="    Номер телефона"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="30dp"
+        android:hint="@string/number_phone"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_et" />
+        app:layout_constraintTop_toBottomOf="@+id/name_et"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/password_et"
@@ -73,12 +78,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:drawableLeft="@drawable/ic_password"
-        android:hint="   Пароль"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="22dp"
+        android:hint="@string/edPassword"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNumber_et" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber_et"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/password2_et"
@@ -86,12 +93,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:drawableLeft="@drawable/ic_password"
-        android:hint="    Подвердить пароль"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="22dp"
+        android:hint="@string/edPassword2"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_et" />
+        app:layout_constraintTop_toBottomOf="@+id/password_et"
+        android:importantForAutofill="no" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/register_btnCard"
@@ -111,7 +120,9 @@
             android:layout_width="315dp"
             android:layout_height="56dp"
             android:backgroundTint="@color/white"
-            android:text="Регистрация"
+            android:text="@string/registration"
+            android:textAllCaps="false"
+            style="@style/ButtonStyle"
             android:textColor="#4D12121D"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
@@ -138,7 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
-            android:text="или"
+            android:text="@string/or"
             android:textSize="16sp" />
 
         <View
@@ -164,7 +175,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/ic_facebook" />
+            android:background="@drawable/ic_facebook"
+            android:contentDescription="@string/error" />
 
         <ImageView
             android:id="@+id/google_btn"
@@ -172,7 +184,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/ic_google" />
+            android:background="@drawable/ic_google"
+            android:contentDescription="@string/error" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

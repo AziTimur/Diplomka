@@ -24,14 +24,15 @@
            android:background="@drawable/icon"
            app:layout_constraintEnd_toEndOf="parent"
            app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent" />
+           app:layout_constraintTop_toTopOf="parent"
+           android:contentDescription="@string/error" />
 
        <TextView
            android:id="@+id/nameApp_tv"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_margin="30dp"
-           android:text="CUSTOM CAPS"
+           android:text="@string/main_title"
            android:textColor="@color/white"
            android:textSize="36sp"
            android:textStyle="bold"
@@ -44,7 +45,7 @@
            android:layout_height="wrap_content"
            android:layout_marginStart="30dp"
            android:layout_marginTop="8dp"
-           android:text="Магазин кепок"
+           android:text="@string/main_title_ru"
            android:textColor="@color/white"
            android:textSize="18sp"
            app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +66,8 @@
                android:layout_width="315dp"
                android:layout_height="56dp"
                android:backgroundTint="@color/white"
-               android:text="Войти"
+               android:text="@string/signIn"
+               style="@style/ButtonStyle"
                android:textColor="@color/black"
                android:textStyle="bold" />
 
@@ -101,8 +103,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#12121D8A"
-            android:text="Регистрация"
-            android:textColor="@color/black"
+            style="@style/ButtonStyle"
+            android:text="@string/registration"
+            android:textColor="@color/whiteCap"
             android:textStyle="bold" />
 
 

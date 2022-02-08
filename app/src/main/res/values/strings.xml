@@ -10,9 +10,15 @@
     <string name="registration">Регистрация</string>
     <string name="forget_password">Забыли пароль?</string>
     <string name="vosstanovit">Восстановить</string>
-    <string name="or">или</string>
     <string name="restorePassword">Восстановить пароль</string>
     <string name="defaultNumber">+ 996 788 999 555</string>
     <string name="defaultDescription">Введите номер, указанный при регистрации. Вам будет отправлен код подтверждения</string>
     <string name="sendText">Отправить</string>
+    <string name="main_title">CUSTOM CAPS</string>
+    <string name="main_title_ru">Магазин кепок</string>
+    <string name="error">Error</string>
+    <string name="name">Имя</string>
+    <string name="number_phone">Номер телефона</string>
+    <string name="edPassword2">Подвердить пароль</string>
+    <string name="or">или</string>
 </resources>
