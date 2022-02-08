@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="sfUiTextHeavy">36sp</dimen>
-    <dimen name="sfUiDisplayBold">28sp</dimen>
-    <dimen name="sfUiDisplayBold20">20sp</dimen>
-    <dimen name="sfUiTextBold">16sp</dimen>
-    <dimen name="sfUiTextRegular">14sp</dimen>
-    <dimen name="sfUiTextRegular10">10sp</dimen>
+    <dimen name="sf36">36sp</dimen>
+    <dimen name="sf28">28sp</dimen>
+    <dimen name="sf20">20sp</dimen>
+    <dimen name="sf16">16sp</dimen>
+    <dimen name="sf14">14sp</dimen>
+    <dimen name="sf10">10sp</dimen>
 </resources>

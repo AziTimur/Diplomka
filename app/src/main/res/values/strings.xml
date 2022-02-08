@@ -2,7 +2,7 @@
     <string name="app_name">Diplomka</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="edHintNumber"><font size ="16">Номер
+    <string name="edHintNumber"><font size="16">Номер
     </font></string>
     <string name="signIn">Войти</string>
     <string name="edPassword">Пароль</string>
@@ -11,4 +11,8 @@
     <string name="forget_password">Забыли пароль?</string>
     <string name="vosstanovit">Восстановить</string>
     <string name="or">или</string>
+    <string name="restorePassword">Восстановить пароль</string>
+    <string name="defaultNumber">+ 996 788 999 555</string>
+    <string name="defaultDescription">Введите номер, указанный при регистрации. Вам будет отправлен код подтверждения</string>
+    <string name="sendText">Отправить</string>
 </resources>
