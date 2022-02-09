@@ -1,25 +1,34 @@
 package com.example.diplomka.auth
 
+import android.content.ContentValues
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.diplomka.R
+import com.example.diplomka.databinding.FragmentMainBinding
+import com.example.diplomka.databinding.FragmentSignInBinding
 
 
-class SignInFragment : Fragment() {
+class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    private val binding: FragmentSignInBinding by viewBinding()
 
-    }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_in, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.tvRegistrationSignIn.setOnClickListener{
+            findNavController().navigate(R.id.registrationFragment)
+            Log.e(ContentValues.TAG, "onViewCreated: $it")
+        }
+        binding.tvRecovery.setOnClickListener{
+            findNavController().navigate(R.id.restorePasswordFragment)
+            Log.e(ContentValues.TAG, "onViewCreated: $it")
+        }
     }
 }

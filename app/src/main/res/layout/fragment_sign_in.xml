@@ -105,7 +105,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_ewe_ne_zareg" />
 
     <TextView
-        android:id="@+id/tv_vosstanovit"
+        android:id="@+id/tv_recovery"
         android:layout_width="96dp"
         android:layout_height="18dp"
         android:layout_marginStart="102dp"
@@ -124,7 +124,7 @@
         app:cardCornerRadius="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_vosstanovit">
+        app:layout_constraintTop_toBottomOf="@+id/tv_recovery">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/signIn_btn"

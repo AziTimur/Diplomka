@@ -22,8 +22,12 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.registerBtn.setOnClickListener{
+        binding.registerBtn1.setOnClickListener{
             findNavController().navigate(R.id.registrationFragment)
+            Log.e(TAG, "onViewCreated: $it")
+        }
+        binding.inBtn.setOnClickListener{
+            findNavController().navigate(R.id.signInFragment)
             Log.e(TAG, "onViewCreated: $it")
         }
     }
