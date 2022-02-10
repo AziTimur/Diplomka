@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
-        android:background="@drawable/icon_first"
+        android:background="@drawable/icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:drawableLeft="@drawable/ic_phone"
+        android:drawableLeft="@drawable/ic_phone_black"
         android:hint="    Номер телефона"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:drawableLeft="@drawable/ic_phone"
+        android:drawableLeft="@drawable/ic_phone_black"
         android:hint="    Пароль"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:drawableLeft="@drawable/ic_phone"
+        android:drawableLeft="@drawable/ic_phone_black"
         android:hint="    Подвердить пароль"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,7 +172,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/ic_apple__1_" />
+            android:background="@drawable/ic_google" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
