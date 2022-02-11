@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="21dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/favourite_conCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="@color/grayCap"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/black_snapback_scenes"
+            android:contentDescription="@string/error" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/nameBrand_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sf10"
+        android:fontFamily="@font/sfuitextbold"
+        android:text="@string/adidas"
+        android:textSize="@dimen/sf16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourite_conCard" />
+
+    <ImageView
+        android:id="@+id/favouriteYellowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sf10"
+        android:background="@drawable/ic_favorites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourite_conCard"
+        android:contentDescription="@string/error" />
+
+    <TextView
+        android:id="@+id/descriptBrand_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sfuitextregular"
+        android:text="@string/san_francisco_baseball"
+        android:textSize="@dimen/sf10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameBrand_tv" />
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/sfuitextbold"
+        android:text="@string/price"
+        android:textColor="@color/yellowCap"
+        android:textSize="@dimen/sf14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptBrand_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
