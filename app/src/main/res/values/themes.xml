@@ -23,7 +23,6 @@
     </style>
     <style name="Toolbar" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/sf28</item>
-
         <item name="fontFamily">@font/sfuidisplaybold</item>
     </style>
 </resources>
