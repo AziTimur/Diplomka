@@ -6,4 +6,5 @@
     <dimen name="sf16">16sp</dimen>
     <dimen name="sf14">14sp</dimen>
     <dimen name="sf10">10sp</dimen>
+    <dimen name="sf12">12dp</dimen>
 </resources>

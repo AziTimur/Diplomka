@@ -30,5 +30,9 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
             findNavController().navigate(R.id.restorePasswordFragment)
             Log.e(ContentValues.TAG, "onViewCreated: $it")
         }
+        binding.signInBtn.setOnClickListener{
+            findNavController().navigate(R.id.homeFragment)
+            Log.e(ContentValues.TAG, "onViewCreated: $it")
+        }
     }
 }
