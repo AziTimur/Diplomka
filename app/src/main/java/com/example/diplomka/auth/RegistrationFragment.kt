@@ -17,7 +17,6 @@ import com.example.diplomka.databinding.FragmentRegistrationBinding
 class RegistrationFragment : Fragment(R.layout.fragment_registration) {
     private val binding: FragmentRegistrationBinding by viewBinding()
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
