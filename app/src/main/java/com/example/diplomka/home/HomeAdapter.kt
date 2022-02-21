@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.diplomka.Caps
-import com.example.diplomka.R
 import com.example.diplomka.databinding.ItemHomeListBinding
 
 class HomeAdapter(private val caps: Caps)  : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
@@ -21,7 +20,7 @@ class HomeAdapter(private val caps: Caps)  : RecyclerView.Adapter<HomeAdapter.Vi
     inner class ViewHolder(private val containerView: ItemHomeListBinding) :
         RecyclerView.ViewHolder(containerView.root) {
             fun onBind(caps: Caps) {
-                containerView.mainImage.setImageResource(R.drawable.background)
+                containerView.mainImage.setImageResource(caps.image)
             }
     }
 
