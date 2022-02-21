@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.my_account.MyAccauntFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_acc"
+        android:layout_margin="@dimen/sf28"
+        style="@style/Toolbar"
+        />
+
+    <TextView
+        android:id="@+id/profile_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:drawableStart="@drawable/ic_user_y"
+        android:drawablePadding="25dp"
+        android:layout_marginTop="48dp"
+        android:text="Профиль"
+        android:fontFamily="@font/sfuitextbold"
+        android:textSize="@dimen/sf20"/>
+    <TextView
+        android:id="@+id/myOrder_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:drawableStart="@drawable/ic_orders"
+        android:drawablePadding="25dp"
+        android:layout_marginTop="18dp"
+        android:text="Мои заказы"
+        android:fontFamily="@font/sfuitextbold"
+        android:textSize="@dimen/sf20"/>
+    <TextView
+        android:id="@+id/adress_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="25dp"
+        android:layout_marginTop="18dp"
+        android:text="Адрес"
+        android:fontFamily="@font/sfuitextbold"
+        android:textSize="@dimen/sf20"/>
+
+</LinearLayout>

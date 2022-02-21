@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic____________"
+        android:contentDescription="@string/error" />
+
+    <LinearLayout
+        android:id="@+id/brandContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_recyclerBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/sfuidisplaybold"
+            android:text="@string/popular_brands"
+            android:textSize="@dimen/sf20" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_brand_list" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bestsellers_recycler_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sf14"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_recyclerBestsellers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/sfuidisplaybold"
+            android:text="Бестселлеры"
+            android:textSize="@dimen/sf20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/viewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Смотреть все"
+            android:textColor="#1976D2"
+            android:layout_gravity="end"
+            android:textSize="@dimen/sf12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_product_list"
+            app:layout_constraintTop_toBottomOf="@+id/title_recyclerBestsellers"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/stocks_recycler_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sf14"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_recycler_stocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/sfuidisplaybold"
+            android:text="Бестселлеры"
+            android:textSize="@dimen/sf20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/viewAllStocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Смотреть все"
+            android:textColor="#1976D2"
+            android:layout_gravity="end"
+            android:textSize="@dimen/sf12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_product_list"
+            app:layout_constraintTop_toBottomOf="@+id/title_recycler_stocks"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
