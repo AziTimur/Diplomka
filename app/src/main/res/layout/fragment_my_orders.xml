@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragments.my_account.MyOrdersFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_my_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sf16"
+        android:backgroundTint="#DAD9D9"
+        android:src="?attr/homeAsUpIndicator"
+        android:contentDescription="@string/content_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sfuidisplaybold"
+        android:text="@string/my_orders"
+        android:textColor="@color/blackCap"
+        android:textSize="@dimen/sf28" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_my_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        tools:listitem="@layout/item_my_orders"
+        />
+
+</LinearLayout>

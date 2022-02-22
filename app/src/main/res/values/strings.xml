@@ -23,4 +23,10 @@
     <string name="profile_name">Izat Bekboev</string>
     <string name="profile_edit">Редактировать профиль</string>
     <string name="apply">Применить</string>
+    <string name="my_orders">Мои заказы</string>
+    <string name="date_my_orders">Дата:</string>
+    <string name="status_orders">Статус:</string>
+    <string name="details_order">Детали заказа</string>
+    <string name="detail_date_order">Дата заказа:</string>
+    <string name="date_send">Дата отправки:</string>
 </resources>
