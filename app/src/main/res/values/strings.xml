@@ -22,4 +22,5 @@
     <string name="content_description">content</string>
     <string name="profile_name">Izat Bekboev</string>
     <string name="profile_edit">Редактировать профиль</string>
+    <string name="apply">Применить</string>
 </resources>
